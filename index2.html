@@ -324,24 +324,13 @@
     <section class="contact" id="contact">
         <div class="container">
             <h2 class="section-title">Inizia la prova gratuita</h2>
-            <div class="contact-form">
-                <form action="https//app.getresponse.com/add_subscriber.html" method="POST">
-                    <div class="form-group">
-                        <label for="name">Nome</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="surname">Cognome</label>
-                        <input type="text" id="surname" name="surname" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                        <input type="hidden" name="campaign_token" value="jhcz4">
-                    </div>
-                    <button type="submit" class="cta-button">Invia</button>
-                </form>
-            </div>
+            <form action="https://app.getresponse.com/add_subscriber.html" method="POST" accept-charset="utf-8">
+                <input type="text" name="name" placeholder="Il tuo nome" required>
+                <input type="email" name="email" placeholder="La tua email" required>
+                <input type="hidden" name="campaign_token" value="jhcz4">
+                <input type="hidden" name="start_day" value="0">
+                <input type="submit" value="Iscriviti">
+            </form>
         </div>
     </section>
 </body>
